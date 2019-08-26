@@ -16,6 +16,6 @@ mongoose.connect(keys.mongoURI, { useNewUrlParser: true }, () => {
     console.log('connected!'); 
 });
 
+const PORT = process.env.PORT || 3000;
 
-
-app.listen(3000);
+app.listen(PORT);
