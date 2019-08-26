@@ -1,7 +1,13 @@
 const express = require('express');
 const router = express.Router();
 const Post = require('../models/Posts');
+const path = require('path');
 
+//front page 
+
+router.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'index.html'))
+});
 // Get All posts
 router.get('/posts', async (req, res) => {
     try {

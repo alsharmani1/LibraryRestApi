@@ -12,9 +12,7 @@ app.use(bodyParser.json());
 app.use(postRoute);
 
 //Mongo connection
-mongoose.connect(keys.mongoURI, { useNewUrlParser: true }, () => {
-    console.log('connected!'); 
-});
+mongoose.connect(keys.mongoURI, { useNewUrlParser: true });
 
 const PORT = process.env.PORT || 3000;
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Library REST API</title>
+
+</head>
+
+<body>
+    <div class="container m-3">
+        <h1>Library REST API</h1>
+        <p style="width: 80vh;">This app was built using Node, Express, and MongoDb and is a REST API that gets, posts,
+            updates, and deletes books from library. In order to work with the api you can use any REST client like
+            postman to make http requests to the routes below</p>
+
+        <p>
+            The book data is simple, it only includes: <br>
+            - Title <br>
+            - Description</p>
+
+        <p>
+            Data Example: <br>
+            { "tile": "My Book", "description": "This is my book!" }</p>
+
+        <p>
+            Routes:
+            <br>
+            - Get all books: Make a get request to /posts <br>
+            - Add a book: Make a post request to /posts <br>
+            - Edit a book: Make a patch request to /posts/:postId <br>
+            - Delete a book: Make a delete request to /posts/:postId <br>
+        </p>
+    </div>
+</body>
+
+</html>
